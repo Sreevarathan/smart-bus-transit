@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#0f766e">
+  <title>Smart Bus Transit</title>
+  <link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+  <header class="topbar">
+    <div class="brand"><span class="brand-icon">↗</span><div><strong>Smart Bus Transit</strong><small>Arrival & seat availability system</small></div></div>
+    <span class="cloud-status"><i></i> Cloud-connected prototype</span>
+  </header>
+  <div class="shell">
+    <aside class="sidebar">
+      <p class="eyebrow">WORKSPACE</p>
+      <button class="nav active" data-page="bus"><span>▣</span> BUS</button>
+      <button class="nav" data-page="passenger"><span>♙</span> PASSENGER</button>
+      <button class="nav" data-page="monitor"><span>◉</span> MONITOR</button>
+      <button class="nav" data-page="simulate"><span>⌁</span> SIMULATE</button>
+      <div class="sidebar-note"><strong>Shared cloud database</strong><p>All modules use the same backend.</p></div>
+    </aside>
+    <main id="app" class="content" aria-live="polite">
+      <div class="loading">Loading Smart Bus Transit…</div>
+    </main>
+  </div>
+  <div id="toast" class="toast" role="status"></div>
+  <script src="/app.js" defer></script>
+</body>
+</html>
